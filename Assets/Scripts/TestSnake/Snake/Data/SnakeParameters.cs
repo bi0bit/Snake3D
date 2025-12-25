@@ -13,7 +13,5 @@ namespace TestSnake.Snake.Data
 		[field: SerializeField] public float TurnSpeed { get; private set; }
 		
 		[field: SerializeField] public float BodySpace { get; private set; }
-		
-		[field: SerializeField] public int StartBodyLength { get; private set; }
 	}
 }

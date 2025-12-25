@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MoveSpeed>k__BackingField: 7
   <BodySpeed>k__BackingField: 7
-  <TurnSpeed>k__BackingField: 420
+  <TurnSpeed>k__BackingField: 380
   <BodySpace>k__BackingField: 1.45
-  <StartBodyLength>k__BackingField: 3
+  <StartBodyLength>k__BackingField: 256

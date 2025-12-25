@@ -15,7 +15,7 @@ namespace TestSnake.Player
 			_gameInput = gameInput;
 		}
 
-		private void Update()
+		private void FixedUpdate()
 		{
 			_controlSnake.Movement.Move(_gameInput.GetMoveDirection());
 		}

@@ -21,11 +21,13 @@ namespace TestSnake.Snake.Impl
 		
 		[field: SerializeField] public SnakeParameters Data { get; private set; }
 
-		public ICollection<ASnakeNode> Body => _body.AsReadOnlyCollection();
+		public LinkedList<ASnakeNode> Body => _body;
 		
 		public IMovement Movement { get; private set; }
 		
 		public IEater Eater { get; private set; }
+		
+		public int SizeTail { get; private set; }
 
 		public event UnityAction OnGrow;
 
@@ -56,7 +58,7 @@ namespace TestSnake.Snake.Impl
 
 		private void InitBodyLength()
 		{
-			for (var i = 0; i < Data.StartBodyLength; ++i)
+			for (var i = 0; i < 256; ++i)
 			{
 				Grow();
 			}
@@ -68,7 +70,7 @@ namespace TestSnake.Snake.Impl
 			var newNodePosition = lastNodeTransform.position + (lastNodeTransform.forward * -1) * Data.BodySpace;
 			var newNode = Instantiate(_bodyPrefab, newNodePosition, lastNodeTransform.rotation, transform);
 			_body.AddLast(newNode);
-			
+			SizeTail++;
 			OnGrow?.Invoke();
 		}
 

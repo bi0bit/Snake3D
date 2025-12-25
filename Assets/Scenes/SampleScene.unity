@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.45083082, g: 0.4990661, b: 0.5656289, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -268,8 +267,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 487205519}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.489993, z: -92.380005}
+  m_LocalRotation: {x: -0.156077, y: -0.47677958, z: 0.822126, w: 0.26912847}
+  m_LocalPosition: {x: 38.3, y: 56.72, z: -71.77001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -293,22 +292,22 @@ MonoBehaviour:
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
   m_Priority: 10
-  m_StandbyUpdate: 1
+  m_StandbyUpdate: 2
   m_LookAt: {fileID: 1076180481}
   m_Follow: {fileID: 1076180481}
   m_Lens:
     FieldOfView: 40
     OrthographicSize: 5
     NearClipPlane: 0.3
-    FarClipPlane: 100
-    Dutch: 0
-    ModeOverride: 2
-    LensShift: {x: 0, y: 0}
-    GateFit: 2
+    FarClipPlane: 120
+    Dutch: -120
+    ModeOverride: 3
+    LensShift: {x: 0.01, y: 0.01}
+    GateFit: 4
     FocusDistance: 10
     m_SensorSize: {x: 1, y: 1}
   m_Transitions:
-    m_BlendHint: 1
+    m_BlendHint: 0
     m_InheritPosition: 0
     m_OnCameraLive:
       m_PersistentCalls:
@@ -355,7 +354,7 @@ Light:
   m_InnerSpotAngle: 12
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -388,7 +387,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -679,8 +678,8 @@ Camera:
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
+  m_projectionMatrixMode: 2
+  m_GateFitMode: 4
   m_FOVAxisMode: 0
   m_Iso: 200
   m_ShutterSpeed: 0.005
@@ -692,7 +691,7 @@ Camera:
   m_BarrelClipping: 0.25
   m_Anamorphism: 0
   m_SensorSize: {x: 1, y: 1}
-  m_LensShift: {x: 0, y: 0}
+  m_LensShift: {x: 0.01, y: 0.01}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -700,7 +699,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 100
+  far clip plane: 120
   field of view: 40
   orthographic: 0
   orthographic size: 5
@@ -727,8 +726,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.489993, z: -92.380005}
+  m_LocalRotation: {x: 0.33486474, y: -0.3735564, z: 0.17799088, w: 0.84654623}
+  m_LocalPosition: {x: 38.3, y: 56.72, z: -71.77001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -751,10 +750,10 @@ MonoBehaviour:
   m_IgnoreTimeScale: 0
   m_WorldUpOverride: {fileID: 0}
   m_UpdateMethod: 2
-  m_BlendUpdateMethod: 1
+  m_BlendUpdateMethod: 0
   m_DefaultBlend:
-    m_Style: 1
-    m_Time: 2
+    m_Style: 3
+    m_Time: 1
     m_CustomCurve:
       serializedVersion: 2
       m_Curve: []
@@ -837,11 +836,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 3
-  m_FollowOffset: {x: 0, y: 57.67, z: -0}
+  m_FollowOffset: {x: 38.3, y: 37.06, z: 52.23}
   m_XDamping: 20
   m_YDamping: 20
   m_ZDamping: 20
-  m_AngularDampingMode: 1
+  m_AngularDampingMode: 0
   m_PitchDamping: 20
   m_YawDamping: 20
   m_RollDamping: 20

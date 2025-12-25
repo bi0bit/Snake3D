@@ -4,6 +4,6 @@ namespace TestSnake.Map
 {
 	public interface IMap
 	{
-		Mesh Mesh { get; }
+		public Mesh Mesh { get; }
 	}
 }

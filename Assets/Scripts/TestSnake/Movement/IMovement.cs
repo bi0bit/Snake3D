@@ -4,6 +4,6 @@ namespace TestSnake.Snake
 {
 	public interface IMovement
 	{
-		void Move(Vector2 moveDirection);
+		public void Move(Vector2 inputDirection);
 	}
 }
