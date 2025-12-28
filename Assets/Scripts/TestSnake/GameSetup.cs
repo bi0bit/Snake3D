@@ -1,11 +1,8 @@
-﻿using System;
+﻿using TestSnake.Game;
 using TestSnake.Game.Data;
 using TestSnake.Map;
-using TestSnake.Map.Impl;
 using TestSnake.Player;
-using TestSnake.Snake;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace TestSnake
 {
@@ -18,7 +15,7 @@ namespace TestSnake
 
 		private IGameInput _gameInput;
 
-		private ISnake _snake;
+		// private Snake _snake;
 
 		private IMap _map;
 
@@ -39,14 +36,14 @@ namespace TestSnake
 		private void InitComponents()
 		{
 			_playerController = GetComponentInChildren<PlayerController>();
-			_snake = GetComponentInChildren<ISnake>();
+			// _snake = GetComponentInChildren<ISnake>();
 			_gameInput = GetComponentInChildren<IGameInput>();
 			_map = GetComponentInChildren<IMap>();
 		}
 
 		private void InitPlayer()
 		{
-			_playerController.Init(_snake, _gameInput);
+			// _playerController.Init(_snake, _gameInput);
 		}
 
 		private void InitFoodGenerator()

@@ -1,9 +1,29 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 
 namespace Utils.Extenstions.MeshExtensions
 {
 	public static class MeshExtensions
 	{
+		public static Mesh CombineMesh(this IEnumerable<MeshFilter> meshes)
+		{
+			var meshFilters = meshes as MeshFilter[] ?? meshes.ToArray();
+			var combine = new CombineInstance[meshFilters.Length];
+
+			var i = 0;
+			foreach (var meshFilter in meshFilters)
+			{
+				combine[i].mesh = meshFilter.sharedMesh;
+				combine[i].transform = meshFilter.transform.localToWorldMatrix;
+				i++;
+			}
+
+			var mesh = new Mesh();
+			mesh.CombineMeshes(combine);
+			return mesh;
+		}
+		
 		public static float CalculateTotals(this Mesh mesh, ref float[] sizes, ref float[] cumulativeSizes)
 		{
 			sizes = GetTriSizes(mesh.triangles, mesh.vertices);

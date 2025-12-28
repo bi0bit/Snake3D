@@ -1,0 +1,18 @@
+{
+    "name": "TestSnake.Game",
+    "rootNamespace": "",
+    "references": [
+        "GUID:459db45a918bf93489f6aae4f403c658",
+        "GUID:6f75f9aae859e4b4cab1da6b36710e54",
+        "GUID:6579a2b43d2e481898c6c0c00aec89b5"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

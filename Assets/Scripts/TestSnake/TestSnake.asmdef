@@ -1,0 +1,18 @@
+{
+    "name": "TestSnake",
+    "rootNamespace": "",
+    "references": [
+        "GUID:6f75f9aae859e4b4cab1da6b36710e54",
+        "GUID:255ecf28aefb42345a19f4e78d820c12",
+        "GUID:459db45a918bf93489f6aae4f403c658"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
